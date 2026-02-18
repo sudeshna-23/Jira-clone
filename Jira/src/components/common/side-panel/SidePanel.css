@@ -1,0 +1,25 @@
+.nav-items img{
+    height: 10px;
+    width: 10px;
+}
+
+.nav-items{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    gap: 10px;
+    padding: 10px 0px;
+}
+
+nav{
+    width: 150px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    /* gap: 20px; */
+    background-color: rgb(240, 240, 240);
+    border-right: 1px solid lightgray;
+}
