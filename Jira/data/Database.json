@@ -1,0 +1,40 @@
+{
+  "tasks": [
+    {
+      "id": 1,
+      "title": "Design login page",
+      "description": "Create form UI",
+      "type":"bug",
+      "status": "new",
+      "effort": 2,
+      "assigneeId": 1,
+      "order": 1,
+      "createdAt": "2026-02-18"
+    },
+    {
+      "id": 2,
+      "title": "Setup routing",
+      "description": "Configure routes",
+      "type":"document",
+      "status": "in-progress",
+      "effort": 6,
+      "assigneeId": 1,
+      "order": 2,
+      "createdAt": "2026-02-18"
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "name": "Sudeshna"
+    },
+    {
+      "id": 2,
+      "name": "Chandru"
+    },
+    {
+      "id": 3,
+      "name": "Gowtham"
+    }
+  ]
+}

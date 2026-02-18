@@ -14,25 +14,24 @@ const ICON_MAP = {
     bug: bug
 };
 
-export const WorkItem = (props) => {
+export const WorkItem = ({work}) => {
 
-    const {order, title, desc, type, status="new", effort=0} = props;
+    // const {order, title, desc, type, status="new", effort=0} = props;
 
-    const icon = ICON_MAP[type] || document;
+    const icon = ICON_MAP[work.type] || document;
 
     return(
         <tr className="work-item">
-            <td className="order-number">{order}</td>
-            <td className="work-item-type">{type}</td>
+            <td className="order-number">{work.order}</td>
+            <td className="work-item-type">{work.type}</td>
             <td className="work-item-title">
-                <Image source={icon} alternate={type}></Image>
-                <h2>{title}</h2>
+                <Image source={icon} alternate={work.type}></Image>
+                <h2>{work.title}</h2>
             </td>
             <td className="work-item-status">
-                <span className={`status-dot ${status.toLowerCase()}`}></span>
-                <h3>{status}</h3>
+                <h3>{work.status}</h3>
             </td>
-            <td>{effort}</td>
+            <td>{work.effort}</td>
         </tr>
     )
 }

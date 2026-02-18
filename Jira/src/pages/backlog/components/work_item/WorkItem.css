@@ -2,7 +2,7 @@
     display: flex;
 }
 
-.status-dot {
+/* .status-dot {
     width: 8px;
     height: 8px;
     border-radius: 50%;
@@ -12,10 +12,10 @@
 
 .status-dot.new {
     background-color: #3a3939;
-}
+} */
 
-.work-item-status {
+/* .work-item-status {
     display: flex;
     align-items: center;
     gap: 8px;
-}
+} */
