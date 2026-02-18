@@ -1,0 +1,21 @@
+.work-item-title {
+    display: flex;
+}
+
+/* .status-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    flex-shrink: 0;
+    background-color: #8f8d8d;
+}
+
+.status-dot.new {
+    background-color: #3a3939;
+} */
+
+/* .work-item-status {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+} */

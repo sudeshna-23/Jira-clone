@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react"
 import "./WorkItemTable.css"
+import { WorkItem } from "../work_item/WorkItem"
 
-function WorkItemTable() {
+export const WorkItemTable = () => {
     const [workItems, setWorkItems] = useState([])
 
     useEffect(() => {
@@ -31,13 +32,7 @@ function WorkItemTable() {
             </thead>
             <tbody>
                 {workItems.map(task => (
-                    <tr key={task.id}>
-                        <td>{task.order}</td>
-                        <td>Task</td>
-                        <td>{task.title}</td>
-                        <td>{task.status}</td>
-                        <td>{task.effort ?? "-"}</td>
-                    </tr>
+                    <WorkItem key={task.id} work = {task}/>
                 ))}
             </tbody>
         </table>
@@ -45,5 +40,3 @@ function WorkItemTable() {
         
     )
 }
-
-export default WorkItemTable;
