@@ -16,8 +16,6 @@ const ICON_MAP = {
 
 export const WorkItem = ({work}) => {
 
-    // const {order, title, desc, type, status="new", effort=0} = props;
-
     const icon = ICON_MAP[work.type] || document;
 
     return(
@@ -25,11 +23,16 @@ export const WorkItem = ({work}) => {
             <td className="order-number">{work.order}</td>
             <td className="work-item-type">{work.type}</td>
             <td className="work-item-title">
+                <div className="flex-wrapper">
                 <Image source={icon} alternate={work.type}></Image>
                 <h2>{work.title}</h2>
+                </div>
             </td>
             <td className="work-item-status">
+                <div className="flex-wrapper">
+                <span className={`status-dot ${work.status}`}></span>
                 <h3>{work.status}</h3>
+                </div>
             </td>
             <td>{work.effort}</td>
         </tr>
