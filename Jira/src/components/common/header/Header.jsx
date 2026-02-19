@@ -1,8 +1,6 @@
 import "./Header.css"
 
-import React from 'react'
-
-function Header() {
+export const Header = () => {
   return (
     <header>
         <h3>Azure Devops</h3>
@@ -12,5 +10,3 @@ function Header() {
     </header>
   )
 }
-
-export default Header
